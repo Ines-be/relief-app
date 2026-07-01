@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales — Relief</title>
+<meta name="description" content="Conditions Générales d'Utilisation et Politique de Confidentialité de l'application Relief.">
+<link rel="icon" href="assets/logo.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,340..600&family=Inter:wght@400;500;600&display=swap');
+
+  :root{
+    --cream: #F3EEE2;
+    --white-soft: #FBF9F4;
+    --sage: #93A186;
+    --sage-deep: #57624B;
+    --sage-darkest: #3A4232;
+    --ink: #2C332A;
+    --ink-soft: #5B6355;
+    --line: rgba(44, 51, 42, 0.14);
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{ font-family:'Fraunces', serif; font-weight:500; color:var(--sage-darkest); letter-spacing:-0.01em; }
+  a{ color:var(--sage-deep); }
+
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(243,238,226,0.9);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:72px; max-width:820px; margin:0 auto; padding:0 32px; }
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Fraunces', serif; font-size:1.15rem; text-decoration:none; color:var(--sage-darkest); }
+  .brand img{ width:30px; height:30px; border-radius:8px; }
+  nav .back{ font-size:0.88rem; color:var(--ink-soft); text-decoration:none; }
+
+  .wrap{ max-width:820px; margin:0 auto; padding:0 32px; }
+
+  header.page-head{ padding:64px 0 40px; }
+  header.page-head p.kicker{ font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--sage-deep); font-weight:600; margin-bottom:14px; }
+  header.page-head h1{ font-size:clamp(2rem, 5vw, 2.8rem); margin-bottom:16px; }
+  header.page-head p.sub{ color:var(--ink-soft); line-height:1.7; max-width:600px; }
+
+  .notice{
+    background:var(--white-soft);
+    border:1px solid var(--line);
+    border-left:3px solid var(--sage);
+    border-radius:0 14px 14px 0;
+    padding:20px 26px;
+    margin:0 0 44px;
+    font-size:0.92rem;
+    color:var(--ink-soft);
+    line-height:1.65;
+  }
+  .notice strong{ color:var(--sage-darkest); }
+
+  .toc{
+    display:flex; flex-wrap:wrap; gap:10px;
+    margin-bottom:56px;
+  }
+  .toc a{
+    text-decoration:none;
+    font-size:0.85rem;
+    padding:8px 16px;
+    border-radius:100px;
+    background:var(--white-soft);
+    border:1px solid var(--line);
+    color:var(--sage-darkest);
+  }
+
+  section.doc{ padding-bottom:56px; }
+  section.doc > h2{
+    font-size:1.7rem;
+    padding-top:36px;
+    margin-bottom:8px;
+    scroll-margin-top:90px;
+  }
+  section.doc .doc-sub{
+    color:var(--ink-soft);
+    font-size:0.92rem;
+    margin-bottom:28px;
+  }
+  .art{ margin-bottom:30px; scroll-margin-top:90px; }
+  .art h3{ font-size:1.05rem; margin-bottom:10px; color:var(--sage-deep); }
+  .art p, .art li{ color:var(--ink-soft); line-height:1.75; font-size:0.96rem; margin-bottom:10px; }
+  .art ul{ padding-left:20px; margin-bottom:10px; }
+  .placeholder{ background:rgba(147,161,134,0.18); padding:1px 6px; border-radius:5px; color:var(--sage-darkest); font-style:normal; }
+
+  footer{
+    background:var(--sage-darkest);
+    color:rgba(243,238,226,0.7);
+    padding:34px 0;
+    font-size:0.82rem;
+  }
+  footer .wrap{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+  footer a{ color:rgba(243,238,226,0.85); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="Logo Relief"> Relief</a>
+    <a class="back" href="index.html">← Retour au site</a>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="wrap">
+    <p class="kicker">Informations légales</p>
+    <h1>Mentions légales</h1>
+    <p class="sub">Conditions Générales d'Utilisation et Politique de Confidentialité de l'application Relief, éditée par une équipe étudiante de l'École 42 Paris.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="notice">
+    <strong>Note :</strong> ce document est un modèle rédigé pour couvrir les usages décrits de l'application Relief. Les champs en <span class="placeholder">surbrillance</span> doivent être complétés avant publication (identité de l'éditeur, contact, dates). Compte tenu du caractère sensible des données traitées (état émotionnel), il est recommandé de faire relire ce texte par un professionnel du droit avant sa mise en ligne définitive sur l'App Store.
+  </div>
+
+  <div class="toc">
+    <a href="#cgu">Conditions Générales d'Utilisation</a>
+    <a href="#confidentialite">Politique de Confidentialité</a>
+  </div>
+
+  <!-- ============ CGU ============ -->
+  <section class="doc" id="cgu">
+    <h2>Conditions Générales d'Utilisation</h2>
+    <p class="doc-sub">Dernière mise à jour : <span class="placeholder">[à compléter]</span></p>
+
+    <div class="art">
+      <h3>Article 1 — Objet</h3>
+      <p>Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») ont pour objet de définir les modalités et conditions dans lesquelles l'application mobile Relief (ci-après « l'Application »), disponible sur l'App Store, est mise à disposition des utilisateurs, ainsi que les droits et obligations des parties dans ce cadre. L'utilisation de l'Application implique l'acceptation pleine et entière des présentes CGU.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 2 — Éditeur</h3>
+      <p>L'Application est éditée par <span class="placeholder">[nom de l'équipe / structure]</span>, développée dans le cadre du Build Challenge Apple organisé à l'occasion de la WWDC, par une équipe de quatre étudiants de l'École 42 Paris.</p>
+      <p>Contact : <a href="mailto:contact@relief-app.fr">contact@relief-app.fr</a></p>
+    </div>
+
+    <div class="art">
+      <h3>Article 3 — Description du service</h3>
+      <p>Relief est une application de régulation et de clarté émotionnelle. Elle propose des parcours guidés (questions-réponses, exercices de respiration, ancrage, journaling, dessin) ainsi qu'un bilan émotionnel permettant de consulter l'historique des sessions réalisées.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 4 — Avertissement important : nature de l'Application</h3>
+      <p>Relief est un outil de bien-être personnel. Elle <strong>ne constitue en aucun cas un dispositif médical, un outil de diagnostic, ni un substitut à un avis, un suivi ou un traitement psychologique ou médical professionnel.</strong> En cas de détresse psychologique importante, de pensées suicidaires ou de situation d'urgence, l'utilisateur est invité à contacter immédiatement les services d'urgence (15, 18 ou 112 en France) ou un professionnel de santé.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 5 — Accès à l'Application</h3>
+      <p>L'Application est accessible gratuitement à tout utilisateur disposant d'un appareil compatible et d'un accès à l'App Store. L'éditeur met en œuvre tous les moyens raisonnables pour assurer un accès de qualité, sans garantir une disponibilité continue ou exempte d'erreurs.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 6 — Compte utilisateur et âge minimum</h3>
+      <p>L'utilisation de l'Application peut nécessiter la création d'un compte ou l'activation de fonctionnalités liées à l'écosystème Apple (par exemple Se connecter avec Apple, iCloud). L'Application est destinée aux utilisateurs âgés de <span class="placeholder">[13 / 16]</span> ans et plus. Les mineurs doivent obtenir l'autorisation préalable d'un titulaire de l'autorité parentale avant toute utilisation.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 7 — Propriété intellectuelle</h3>
+      <p>L'ensemble des éléments composant l'Application (structure, textes, graphismes, logo, forme animée, éléments sonores et visuels) sont protégés par le droit de la propriété intellectuelle et demeurent la propriété exclusive de l'éditeur. Toute reproduction, représentation ou exploitation non autorisée est interdite.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 8 — Contenus générés par l'utilisateur</h3>
+      <p>Les contenus saisis par l'utilisateur (réponses, notes de journaling, dessins) restent sa propriété. L'utilisateur garantit qu'il dispose des droits nécessaires sur les contenus qu'il crée dans l'Application et s'engage à ne pas y insérer de contenu illicite.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 9 — Responsabilité</h3>
+      <p>L'éditeur ne saurait être tenu responsable des dommages directs ou indirects résultant de l'utilisation ou de l'impossibilité d'utiliser l'Application, ni des décisions prises par l'utilisateur sur la base des contenus proposés par l'Application.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 10 — Évolution de l'Application et des CGU</h3>
+      <p>L'éditeur se réserve le droit de faire évoluer, à tout moment, les fonctionnalités de l'Application ainsi que les présentes CGU. Les utilisateurs seront informés de toute modification substantielle via l'Application ou l'App Store.</p>
+    </div>
+
+    <div class="art">
+      <h3>Article 11 — Droit applicable et litiges</h3>
+      <p>Les présentes CGU sont soumises au droit français. En cas de litige, une solution amiable sera recherchée en priorité avant toute action judiciaire, portée devant les tribunaux compétents.</p>
+    </div>
+  </section>
+
+  <!-- ============ Politique de confidentialité ============ -->
+  <section class="doc" id="confidentialite">
+    <h2>Politique de Confidentialité</h2>
+    <p class="doc-sub">Dernière mise à jour : <span class="placeholder">[à compléter]</span> — conforme au Règlement Général sur la Protection des Données (RGPD)</p>
+
+    <div class="art">
+      <h3>1. Responsable du traitement</h3>
+      <p>Le responsable du traitement des données à caractère personnel collectées via Relief est <span class="placeholder">[nom de l'équipe / structure]</span>, joignable à l'adresse : <a href="mailto:contact@relief-app.fr">contact@relief-app.fr</a>.</p>
+    </div>
+
+    <div class="art">
+      <h3>2. Données collectées</h3>
+      <p>Selon l'utilisation faite de l'Application, les données suivantes peuvent être traitées :</p>
+      <ul>
+        <li>Données de compte : identifiant Apple (Se connecter avec Apple), adresse e-mail le cas échéant ;</li>
+        <li>Données de session : réponses aux parcours guidés, émotions identifiées, activités réalisées (respiration, ancrage, journaling, dessin) ;</li>
+        <li>Historique du bilan émotionnel : dates des sessions et détails associés, affichés dans le calendrier de l'Application ;</li>
+        <li>Données techniques : type d'appareil, version du système, identifiants techniques nécessaires au bon fonctionnement de l'Application.</li>
+      </ul>
+      <p>Les données relatives à l'état émotionnel de l'utilisateur sont traitées avec une attention particulière compte tenu de leur nature sensible.</p>
+    </div>
+
+    <div class="art">
+      <h3>3. Finalités du traitement</h3>
+      <ul>
+        <li>Fournir les fonctionnalités de l'Application (parcours guidés, activités, bilan émotionnel) ;</li>
+        <li>Assurer la sauvegarde et la synchronisation des données de l'utilisateur au sein de l'écosystème Apple (par exemple via iCloud), lorsque cette option est activée ;</li>
+        <li>Améliorer la qualité et la sécurité de l'Application.</li>
+      </ul>
+      <p>Relief n'utilise pas les données personnelles à des fins de publicité ciblée et ne les vend à aucun tiers.</p>
+    </div>
+
+    <div class="art">
+      <h3>4. Base légale</h3>
+      <p>Le traitement repose sur le consentement explicite de l'utilisateur, recueilli lors de la première utilisation de l'Application, ainsi que sur l'exécution du service demandé par l'utilisateur.</p>
+    </div>
+
+    <div class="art">
+      <h3>5. Stockage et sécurité</h3>
+      <p>Les données de session sont stockées <span class="placeholder">[localement sur l'appareil de l'utilisateur / sur des serveurs sécurisés, à préciser selon l'architecture retenue]</span>, et le cas échéant synchronisées via iCloud, sous le contrôle exclusif de l'utilisateur et selon les paramètres de confidentialité d'Apple. Des mesures techniques et organisationnelles appropriées sont mises en œuvre afin de garantir la sécurité et la confidentialité des données.</p>
+    </div>
+
+    <div class="art">
+      <h3>6. Partage des données</h3>
+      <p>Aucune donnée personnelle n'est partagée avec des tiers à des fins commerciales. Les seules transmissions éventuelles concernent les prestataires techniques strictement nécessaires au fonctionnement de l'Application (par exemple les services Apple : iCloud, Se connecter avec Apple), dans le respect de leurs propres politiques de confidentialité.</p>
+    </div>
+
+    <div class="art">
+      <h3>7. Durée de conservation</h3>
+      <p>Les données sont conservées pendant toute la durée d'utilisation de l'Application par l'utilisateur, et supprimées dans un délai raisonnable après suppression du compte ou désinstallation, sauf obligation légale contraire.</p>
+    </div>
+
+    <div class="art">
+      <h3>8. Droits de l'utilisateur</h3>
+      <p>Conformément au RGPD, l'utilisateur dispose des droits suivants sur ses données : accès, rectification, effacement, limitation, portabilité et opposition. Il peut également définir des directives relatives au sort de ses données après son décès.</p>
+      <p>Ces droits peuvent être exercés en écrivant à <a href="mailto:contact@relief-app.fr">contact@relief-app.fr</a>. L'utilisateur dispose également du droit d'introduire une réclamation auprès de la CNIL (www.cnil.fr).</p>
+    </div>
+
+    <div class="art">
+      <h3>9. Public concerné et âge minimum</h3>
+      <p>L'Application n'est pas destinée aux enfants de moins de <span class="placeholder">[13]</span> ans. Aucune donnée n'est collectée sciemment auprès d'un public en-deçà de cet âge sans le consentement d'un titulaire de l'autorité parentale.</p>
+    </div>
+
+    <div class="art">
+      <h3>10. Modification de la politique</h3>
+      <p>La présente politique peut être mise à jour à tout moment afin de refléter les évolutions de l'Application ou de la réglementation. L'utilisateur sera informé de toute modification substantielle.</p>
+    </div>
+
+    <div class="art">
+      <h3>11. Contact</h3>
+      <p>Pour toute question relative à la présente politique ou à l'exercice de vos droits : <a href="mailto:contact@relief-app.fr">contact@relief-app.fr</a>.</p>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Relief — École 42 Paris</span>
+    <a href="index.html">Retour au site</a>
+  </div>
+</footer>
+
+</body>
+</html>
