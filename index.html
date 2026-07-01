@@ -74,12 +74,23 @@
     overflow:hidden;
   }
   .blob-stage{
-    width:min(70vw, 560px);
-    height:min(70vw, 560px);
+    width:min(56vw, 380px);
+    height:min(56vw, 380px);
     margin:0 auto 8px;
     position:relative;
   }
   .blob-stage svg{ width:100%; height:100%; display:block; }
+  .hero-logo{
+    width:100%; height:100%;
+    object-fit:contain;
+    display:block;
+    filter:drop-shadow(0 18px 40px rgba(58,66,50,0.18));
+    animation:float 7s ease-in-out infinite;
+  }
+  @keyframes float{
+    0%, 100%{ transform:translateY(0); }
+    50%{ transform:translateY(-10px); }
+  }
 
   .eyebrow{
     font-size:0.78rem;
@@ -322,7 +333,7 @@
   }
 
   @media (prefers-reduced-motion: reduce){
-    .anim-turb, .anim-disp{ animation:none !important; }
+    .hero-logo{ animation:none !important; }
   }
 </style>
 </head>
@@ -344,24 +355,7 @@
 <header class="hero">
   <div class="wrap">
     <div class="blob-stage">
-      <svg viewBox="0 0 500 500">
-        <defs>
-          <filter id="turb" x="-50%" y="-50%" width="200%" height="200%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="7" result="noise">
-              <animate attributeName="baseFrequency" dur="14s" values="0.028;0.007;0.028" repeatCount="indefinite" />
-            </feTurbulence>
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="70">
-              <animate attributeName="scale" dur="14s" values="90;28;90" repeatCount="indefinite" />
-            </feDisplacementMap>
-          </filter>
-          <radialGradient id="blobGrad" cx="35%" cy="35%" r="75%">
-            <stop offset="0%" stop-color="#F4EFE3"/>
-            <stop offset="45%" stop-color="#A9B79B"/>
-            <stop offset="100%" stop-color="#57624B"/>
-          </radialGradient>
-        </defs>
-        <circle cx="250" cy="250" r="170" fill="url(#blobGrad)" filter="url(#turb)" opacity="0.94"/>
-      </svg>
+      <img src="assets/logo.png" alt="Logo Relief" class="hero-logo">
     </div>
     <p class="eyebrow">Application iOS · Régulation émotionnelle</p>
     <h1>De l'émotion floue<br><em>à la clarté</em></h1>
